@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Wiki/BitTorrent/Intro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/index.css">
+  <script defer src="/js/fa.js"></script>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-1">
+        Introduction To BitTorrent
+      </h1>
+      <h2 class="title is-2">
+        Summary
+      </h2>
+      <p class="body summary">
+        BitTorrent is a Protocol using to share files with other computers across the internet.
+        <br> It was originally developed by Bram Cohen, and released in July 2001.
+      </p>
+      <hr>
+      <h2 class="title is-2">
+        Usage
+      </h2>
+      <div class="content usage">
+        Using a BitTorrent <a>client</a> (or the original one) originally comprised of
+        <ul>
+          <li>A Client</li>
+          <li>A .torrent file</li>
+          <li>A Tracker Server</li>
+        </ul>
+        However, in newer clients, it is able to use MAGNET links as a replacement for .torrent files,
+        <br> and Distrubuted Hash Tables, Local Peer Discovery, and Peer Exchange. (DHT, LPD, PEX)
+        <br>
+        <br> Using BitTorrent you join a 'swarm' of computers that download/upload to each other.
+        <br> To share a file, the person sharing at first must make a torrent file, which can be made by their BitTorrent client.
+        <br> The torrent file consists of metadata to find and reassemble the file.
+        <br>
+        <br> The metadata is the title of the torrent, trackers to use, list of files, comments, piece size & hashes, info hash, and miscellaneous info. (comments, other torrents, source)
+        <br> When sharing files with BitTorrent, the client is uploading/downloading segments of the file called pieces.
+        <br> The file is segmented into equal sized (usually from 32kb to 16mb) pieces.
+        <br>Due to this segmentation, any torrent download can be paused and restarted without much data loss.
+        <br>Each piece has their own hash to be stored in the torrent file with all the other metadata.
+        <br>This is to easily check for any modifications of the file to prevent accidental or malicious data from being sent to others.
+      </div>
+    </div>
+  </section>
+</body>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <h1 class="title">
+        We happily are sponsored by:
+      </h1>
+      <b><a href="https://www.privateinternetaccess.com/pages/buy-vpn/hansen" style="text-decoration:underline; color:#000;">Private Internet Access</a></b>
+      <br>
+      <a href="https://www.privateinternetaccess.com/pages/buy-vpn/hansen" title="Buy VPN and Support the Tracker and Relay">
+         <img alt="Buy VPN" border="0" src="/hi-i-need-money-to-support-the-server-sorry-and-thanks/2-320x50.gif">
+      </a><br>
+     <b><a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=13520&url_id=92" style="text-decoration:underline; color:#000;">NordVPN</a></b>
+      <br>
+      <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=13520&url_id=92">
+         <img src="/hi-i-need-money-to-support-the-server-sorry-and-thanks/NV.jpg" border="0" alt="Use P2P safely with NordVPN!">
+      </a>
+    </p>
+  </div>
+</footer>
